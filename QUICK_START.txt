@@ -1,0 +1,124 @@
+╔══════════════════════════════════════════════════════════════════╗
+║           MERCUR E-COMMERCE PLATFORM - QUICK START              ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📦 INSTALLATION COMPLETE - All 5 repositories installed!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 GET STARTED IN 3 STEPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  Setup Database
+   $ ./SETUP_DATABASE.sh
+
+2️⃣  Start All Services
+   $ ./START_ALL.sh
+
+3️⃣  Open Browser
+   Storefront:    http://localhost:8000
+   Admin Panel:   http://localhost:7001
+   Vendor Panel:  http://localhost:7002
+   Backend API:   http://localhost:9000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📂 INSTALLED COMPONENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ mercur/                      - Backend API (MedusaJS + Mercur)
+✅ admin-panel/                 - Admin Dashboard (Vite + React)
+✅ vendor-panel/                - Vendor Dashboard (Vite + React)
+✅ b2c-marketplace-storefront/  - Customer Store (Next.js 15)
+✅ clean-medusa-starter/        - Clean Template (Reference)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🛠 USEFUL COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Stop all services:
+  $ ./STOP_ALL.sh
+
+View logs:
+  $ tail -f /tmp/mercur-backend.log
+  $ tail -f /tmp/mercur-storefront.log
+  $ tail -f /tmp/mercur-admin.log
+  $ tail -f /tmp/mercur-vendor.log
+
+Check running services:
+  $ lsof -i :9000,8000,7001,7002
+
+Manual database setup:
+  $ cd mercur/apps/backend
+  $ yarn medusa db:migrate
+  $ yarn medusa seed
+  $ yarn medusa user -e admin@cas-market.com -p supersecret
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚙️  CONFIGURATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Database:  PostgreSQL 16.10 @ localhost:5433
+Cache:     Redis @ localhost:6379
+Database:  cas_marketplace
+
+Environment files configured:
+  ✓ mercur/apps/backend/.env
+  ✓ admin-panel/.env
+  ✓ vendor-panel/.env
+  ✓ b2c-marketplace-storefront/.env
+  ✓ clean-medusa-starter/.env
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📦 FEATURES INCLUDED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Backend Modules:
+  • @mercurjs/framework       - Core framework
+  • @mercurjs/b2c-core        - Multi-vendor marketplace
+  • @mercurjs/commission      - Commission management
+  • @mercurjs/reviews         - Product reviews & ratings
+  • @mercurjs/algolia         - Search integration
+  • @mercurjs/payment-stripe-connect - Vendor payments
+  • @mercurjs/stripe-tax-provider    - Tax calculation
+  • @mercurjs/resend          - Email notifications
+  • @mercurjs/requests        - Request management
+
+Frontend Features:
+  • Product catalog & search
+  • Shopping cart & checkout
+  • Multi-vendor support
+  • User authentication
+  • Order management
+  • Vendor dashboards
+  • Admin controls
+  • Analytics & reporting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  README.md                    - Complete documentation
+  MERCUR_SETUP_COMPLETE.md     - Detailed setup info
+  
+  Mercur Docs:  https://docs.mercurjs.com
+  Medusa Docs:  https://docs.medusajs.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ INSTALLATION SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Date:              November 22, 2025
+Mercur Version:    1.4.3
+MedusaJS Version:  2.10.2
+Node.js:           v22.21.0
+Status:            ✅ Ready for development
+
+Installed from:    https://github.com/mercurjs
+  ✓ mercur
+  ✓ admin-panel
+  ✓ vendor-panel
+  ✓ b2c-marketplace-storefront
+  ✓ clean-medusa-starter
+
+╔══════════════════════════════════════════════════════════════════╗
+║  🎉 Everything is ready! Start with ./SETUP_DATABASE.sh         ║
+╚══════════════════════════════════════════════════════════════════╝
