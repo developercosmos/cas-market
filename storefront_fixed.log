@@ -1,0 +1,1649 @@
+
+> b2c-storefront@0.1.0 dev
+> next dev --turbopack --port 8000 --hostname 0.0.0.0
+
+   ▲ Next.js 15.1.4 (Turbopack)
+   - Local:        http://localhost:8000
+   - Network:      http://0.0.0.0:8000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Compiled in 127ms
+ ✓ Ready in 765ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 3.5s
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&limit=4&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id 200 in 4267ms
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 49ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 48ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 113ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 76ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 21ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 13ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/products?country_code=id&limit=4&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute&order=created_at 200 in 109ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&limit=4&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id 200 in 87ms
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&limit=4&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute&order=created_at 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 8ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 4ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+ ✓ Compiled /[locale]/categories/[category] in 468ms
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 894ms
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 9ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 14ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 3ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 17ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 23ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 40ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 134ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 6ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 2ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 23ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 35ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 132ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 1ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 9ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 1ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 25ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 35ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 150ms
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 11ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 16ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 14ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 14ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 1ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 14ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 2ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 10ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 32ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 37ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 129ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 9ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 2ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 25ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 35ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 93ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 8ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 1ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 21ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 45ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 105ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 7ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 1ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 24ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 33ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+ GET /id/categories/sneakers 200 in 104ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 10ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 1ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 26ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Received response with status 200
+
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+ GET /id/categories/sneakers 200 in 90ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 8ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 1ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 23ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Received response with status 200
+
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&limit=4&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id 200 in 87ms
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&limit=4&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute&order=created_at 200 in 1ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 14ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 4ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 1ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/customers/me?fields=%2Aorders
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 401
+
+Performing request to:
+ URL: http://localhost:9000/store/regions
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+Received response with status 200
+
+Performing request to:
+ URL: http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute
+ Headers: {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Received response with status 200
+
+ GET /id/categories/sneakers 200 in 134ms
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=%2Acategory_children&handle=sneakers 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 7ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/customers/me?fields=%2Aorders 401 in 1ms (cache skip)
+ │ │ Cache skipped reason: (cache-control: no-cache (hard refresh))
+ │ GET http://localhost:9000/store/regions 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/product-categories?fields=handle%2C%20name%2C%20rank%2C%20parent_category_id&limit=100 200 in 0ms (cache hit)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=8&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=id%2Ctitle%2Chandle&order=created_at 200 in 24ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+ │ GET http://localhost:9000/store/products?country_code=id&category_id=pcat_01KAP8BPM3HFP1M25GSSGHKX14&limit=100&offset=0&region_id=reg_01KAP7PT0X4ZXQB5ZQP4RY7TPM&fields=%2Avariants.calculated_price%2C%2Bvariants.inventory_quantity%2C%2Aseller%2C%2Avariants%2C%2Aseller.products%2C%2Aseller.reviews%2C%2Aseller.reviews.customer%2C%2Aseller.reviews.seller%2C%2Aseller.products.variants%2C%2Aattribute_values%2C%2Aattribute_values.attribute 200 in 38ms (cache skip)
+ │ │ Cache skipped reason: (cache: no-cache)
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+Initiating Medusa client with default headers:
+ {
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-publishable-api-key": "pk_4beff13d445f7263d6df00d17c66a35f25586f3763197b2ebdd8ce62092cb5c7",
+  "authorization": "<REDACTED>"
+}
+
+[?25h
